@@ -4,7 +4,7 @@
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/CarlosETB/ecoleta-mobile.svg)](https://github.com/CarlosETB/ecoleta-mobile/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/CarlosETB/ecoleta-mobile.svg)](https://github.com/CarlosETB/ecoleta-mobile/commits/master)
-[![GitHub language count](https://img.shields.io/github/languages/count/CarlosETB/ecoleta-api?color=%2304D361)]
+[![GitHub language count](https://img.shields.io/github/languages/count/CarlosETB/ecoleta-api?color=%2304D361)](https://github.com/CarlosETB/ecoleta-mobile/languages)
 <img alt="Repository size" src="https://img.shields.io/github/repo-size/CarlosETB/ecoleta-api">
 [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/CarlosETB/typescript-badges/)
 <a href="https://rocketseat.com.br">

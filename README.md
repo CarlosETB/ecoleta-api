@@ -54,7 +54,7 @@ Para iniciar o servidor
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](nodejs)
+- [Node.js](https://nodejs.org/)
 - [JavaScript](javascript)
 - [TypeScript](typescript)
 

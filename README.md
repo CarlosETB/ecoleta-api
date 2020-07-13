@@ -7,10 +7,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/CarlosETB/ecoleta-api?color=%2304D361)
 ![GitHub repository size](https://img.shields.io/github/repo-size/CarlosETB/ecoleta-api)
 [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/CarlosETB/typescript-badges/)
-
-<a href="https://rocketseat.com.br">
-<img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
-</a>
+[![Made by Rocketseat](https://img.shields.io/badge/made%20by-Rocketseat-%237519C1)](https://rocketseat.com.br/)
 
 <!-- PROJECT LOGO -->
 

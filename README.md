@@ -25,6 +25,7 @@
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Utilizando](#utilizando)
+- [Tecnologias](#tecnologias)
 - [Licença](#licen%C3%A7a)
 
 <br />

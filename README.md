@@ -57,15 +57,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Node.js](https://nodejs.org/)**
 - **[JavaScript](https://www.javascript.com/)**
 - **[TypeScript](https://www.typescriptlang.org/)**
-- **[Express](https://expressjs.com/pt)**
-- **[CORS][cors]**
-- **[KnexJS][knex]**
-- **[SQLite][sqlite3]**
-- **[ts-node][tsnode]**
-- **[dotENV][dotenv]**
-- **[Multer][multer]**
-- **[Celebrate][celebrate]**
-- **[Joi][joi]**
+- **[Express](https://expressjs.com/)**
+- **[CORS](https://github.com/expressjs/cors)**
+- **[KnexJS](http://knexjs.org/)**
+- **[SQLite](https://www.sqlite.org/)**
+- **[dotENV](https://github.com/motdotla/dotenv)**
+- **[Multer](https://github.com/expressjs/multer)**
+- **[Celebrate](https://github.com/arb/celebrate)**
+- **[Joi](https://hapi.dev/)**
 
 <br />
 

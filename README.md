@@ -54,9 +54,18 @@ Para iniciar o servidor
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](https://nodejs.org/)
-- [JavaScript](https://www.javascript.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+- **[Node.js](https://nodejs.org/)**
+- **[JavaScript](https://www.javascript.com/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Express][express]**
+- **[CORS][cors]**
+- **[KnexJS][knex]**
+- **[SQLite][sqlite3]**
+- **[ts-node][tsnode]**
+- **[dotENV][dotenv]**
+- **[Multer][multer]**
+- **[Celebrate][celebrate]**
+- **[Joi][joi]**
 
 <br />
 

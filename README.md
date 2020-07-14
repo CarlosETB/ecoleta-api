@@ -57,7 +57,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Node.js](https://nodejs.org/)**
 - **[JavaScript](https://www.javascript.com/)**
 - **[TypeScript](https://www.typescriptlang.org/)**
-- **[Express][express]**
+- **[Express](https://expressjs.com/pt)**
 - **[CORS][cors]**
 - **[KnexJS][knex]**
 - **[SQLite][sqlite3]**

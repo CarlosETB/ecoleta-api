@@ -28,8 +28,6 @@
 - [Tecnologias](#tecnologias)
 - [Licença](#licen%C3%A7a)
 
- \* Veja o arquivo <kbd>[package.json](./package.json)</kbd>
-
 <br />
 
 <!-- ABOUT THE PROJECT -->
@@ -67,6 +65,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Multer](https://github.com/expressjs/multer)**
 - **[Celebrate](https://github.com/arb/celebrate)**
 - **[Joi](https://hapi.dev/)**
+
+ \* Veja o arquivo <kbd>[package.json](./package.json)</kbd>
 
 <br />
 

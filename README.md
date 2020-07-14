@@ -28,6 +28,8 @@
 - [Tecnologias](#tecnologias)
 - [Licença](#licen%C3%A7a)
 
+ \* Veja o arquivo <kbd>[package.json](./package.json)</kbd>
+
 <br />
 
 <!-- ABOUT THE PROJECT -->

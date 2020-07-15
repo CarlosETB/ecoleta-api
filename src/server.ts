@@ -1,7 +1,7 @@
 import { errors } from "celebrate";
-import * as express from "express";
-import * as cors from "cors";
-import * as path from "path";
+import express from "express";
+import cors from "cors";
+import path from "path";
 
 import routes from "./routes";
 

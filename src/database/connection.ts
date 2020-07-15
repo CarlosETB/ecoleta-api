@@ -1,5 +1,5 @@
-import * as knex from "knex";
-import * as path from "path";
+import knex from "knex";
+import path from "path";
 
 const connection = knex({
   client: "sqlite3",

@@ -1,6 +1,6 @@
 import { celebrate, Joi } from "celebrate";
-import express from "express";
-import multer from "multer";
+import * as express from "express";
+import * as multer from "multer";
 
 import multerConfig from "./config/multer";
 

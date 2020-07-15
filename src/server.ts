@@ -1,7 +1,7 @@
 import { errors } from "celebrate";
-import express from "express";
-import cors from "cors";
-import path from "path";
+import * as express from "express";
+import * as cors from "cors";
+import * as path from "path";
 
 import routes from "./routes";
 
@@ -15,4 +15,7 @@ app.use("/uploads", express.static(path.resolve(__dirname, "..", "uploads")));
 
 app.use(errors());
 
-app.listen(3333);
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});

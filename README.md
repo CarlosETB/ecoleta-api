@@ -54,9 +54,19 @@ Para iniciar o servidor
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](https://nodejs.org/)
-- [JavaScript](https://www.javascript.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+- **[Node.js](https://nodejs.org/)**
+- **[JavaScript](https://www.javascript.com/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Express](https://expressjs.com/)**
+- **[CORS](https://github.com/expressjs/cors)**
+- **[KnexJS](http://knexjs.org/)**
+- **[SQLite](https://www.sqlite.org/)**
+- **[dotENV](https://github.com/motdotla/dotenv)**
+- **[Multer](https://github.com/expressjs/multer)**
+- **[Celebrate](https://github.com/arb/celebrate)**
+- **[Joi](https://hapi.dev/)**
+
+ \* Veja o arquivo <kbd>[package.json](./package.json)</kbd>
 
 <br />
 

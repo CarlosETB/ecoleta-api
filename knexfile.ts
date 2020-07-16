@@ -1,15 +1,31 @@
-import path from "path";
+const path = require("path");
 
 module.exports = {
-  client: "sqlite3",
-  connection: {
-    filename: path.resolve(__dirname, "src", "database", "database.sqlite"),
+  development: {
+    client: "sqlite3",
+    connection: {
+      filename: path.resolve(__dirname, "src", "database", "database.sqlite"),
+    },
+    migrations: {
+      directory: path.resolve(__dirname, "src", "database", "migrations"),
+    },
+    seeds: {
+      directory: path.resolve(__dirname, "src", "database", "seeds"),
+    },
+    useNullAsDefault: true,
   },
-  migrations: {
-    directory: path.resolve(__dirname, "src", "database", "migrations"),
+  production: {
+    client: "postgresql",
+    connection: process.env.DATABASE_URL,
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    migrations: {
+      directory: "./build/src/database/migrations",
+    },
+    seeds: {
+      directory: "./build/src/database/seeds",
+    },
   },
-  seeds: {
-    directory: path.resolve(__dirname, "src", "database", "seeds"),
-  },
-  useNullAsDefault: true,
 };

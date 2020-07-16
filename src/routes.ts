@@ -1,22 +1,32 @@
-import { celebrate, Joi } from "celebrate";
-import express from "express";
+import { Router } from "express";
+import { celebrate, Joi, Segments } from "celebrate";
 import multer from "multer";
-
 import multerConfig from "./config/multer";
 
 import PointsController from "./controllers/PointsControllers";
-import ItemsControllers from "./controllers/ItemsControllers";
+import ItemsController from "./controllers/ItemsControllers";
 
-const routes = express.Router();
+const routes = Router();
 const upload = multer(multerConfig);
 
 const pointsController = new PointsController();
-const itemsControllers = new ItemsControllers();
+const itemsController = new ItemsController();
 
-routes.get("/items", itemsControllers.index);
-routes.get("/points", pointsController.index);
-routes.get("/points/:id", pointsController.show);
+routes.get("/items", itemsController.index);
 
+routes.get(
+  "/points",
+  celebrate({
+    [Segments.QUERY]: Joi.object().keys({
+      city: Joi.string().required(),
+      uf: Joi.string().required().max(2),
+      items: Joi.string()
+        .regex(new RegExp(/\d,|\d/m))
+        .required(),
+    }),
+  }),
+  pointsController.index
+);
 routes.post(
   "/points",
   upload.single("image"),
@@ -30,12 +40,27 @@ routes.post(
         longitude: Joi.number().required(),
         city: Joi.string().required(),
         uf: Joi.string().required().max(2),
-        items: Joi.string().required(),
+        items: Joi.string()
+          .regex(new RegExp(/\d,|\d/m))
+          .required(),
       }),
     },
-    { abortEarly: false }
+    {
+      abortEarly: false,
+    }
   ),
   pointsController.create
 );
+routes.get(
+  "/points/:id",
+  celebrate({
+    [Segments.PARAMS]: Joi.object().keys({
+      id: Joi.number().required(),
+    }),
+  }),
+  pointsController.show
+);
+routes.put("/points/:id", pointsController.update);
+routes.delete("/points/:id", pointsController.destroy);
 
 export default routes;

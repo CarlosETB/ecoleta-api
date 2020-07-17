@@ -1,20 +1,20 @@
 import { Request, Response } from "express";
-import ItemsService from "../services/ItemsService";
-import config from "../config";
+import knex from "../database/connection";
 
-class ItemsControler {
-  async index(req: Request, res: Response) {
-    const items = await ItemsService.selectAll();
+class ItemsControllers {
+  async index(request: Request, response: Response) {
+    const items = await knex("items").select("*");
+
     const serializedItems = items.map((item) => {
       return {
         id: item.id,
         title: item.title,
-        image_url: `${config.apiUrl}/uploads/${item.image}`,
+        image_url: `https://carlostonholi-ecoleta.herokuapp.com/uploads/${item.image}`,
       };
     });
 
-    return res.status(200).json({ serializedItems });
+    return response.json(serializedItems);
   }
 }
 
-export default ItemsControler;
+export default ItemsControllers;

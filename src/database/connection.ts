@@ -1,7 +1,12 @@
 import knex from "knex";
-const environment = process.env.NODE_ENV || "development";
-const configuration = require("../../knexfile");
+import path from "path";
 
-const connection = knex(configuration[environment]);
+const connection = knex({
+  client: "sqlite3",
+  connection: {
+    filename: path.resolve(__dirname, "database.sqlite"),
+  },
+  useNullAsDefault: true,
+});
 
 export default connection;

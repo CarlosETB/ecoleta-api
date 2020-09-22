@@ -73,4 +73,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sob a licença MIT. Veja [`LICENSE`](./LICENSE) para mais informações.
